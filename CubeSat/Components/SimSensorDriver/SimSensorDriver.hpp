@@ -41,6 +41,7 @@ class SimSensorDriver final : public SimSensorDriverComponentBase {
     // ----------------------------------------------------------------------
 
     U32 m_tick = 0;  //!< Rate group tick counter
+    bool m_sunAngleOutOfRange = false;  //!< Latches current out-of-range state, for edge detection
 };
 
 }  // namespace CubeSat
